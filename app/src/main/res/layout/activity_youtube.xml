@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".YoutubeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rel"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/gradient">
+
+        <ImageView
+            android:id="@+id/Facebook"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ytube" />
+
+        <TextView
+            android:id="@+id/fbtext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Facebook"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Youtube"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rel">
+
+        <EditText
+            android:id="@+id/input_ytubeoURL"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/input"
+            android:ems="10"
+            android:hint="Youtube Video URl"
+            android:inputType="textPersonName"
+            android:minHeight="48dp"
+            android:paddingHorizontal="80dp" />
+
+        <Button
+            android:id="@+id/btn_downloadytubeVideo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_ytubeoURL"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/gradient"
+            android:paddingHorizontal="20dp"
+            android:text="Download Video"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>
